@@ -1,0 +1,36 @@
+#dashboard{
+    
+    .item{
+        padding: 5px 10px;
+        .task-title{
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.8;
+            color: brown;
+        }
+        .time {
+            color: crimson;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 1;
+            text-align: justify;
+            color: teal;
+        }
+        &:nth-child(2){
+            border-radius: 4px 4px 0 0;
+        } 
+        &:last-child{
+            border-radius: 0 0 4px 4px;
+        } 
+        &:nth-child(even){ 
+            background: rgba(orange,0.6);
+        } 
+        &:nth-child(odd){
+            background: rgba(skyblue,0.6);
+        }
+    }
+}

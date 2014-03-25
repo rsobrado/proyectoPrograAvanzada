@@ -1,0 +1,33 @@
+
+<div class="task" ng-controller="TasksCtrl">
+    
+	<section id="services" ng-include="'/views/sections/menu-admin.html'"></section>
+		<form name="frmProducto" id="frmProducto" ng-submit="addTask()" action='' method="POST">
+	    <div class="container">
+	        <div class="row well">
+	        	<div class="col-md-12">
+	                <span id="dashboard" class="title"><i class="fa fa-plus-square-o"></i> Nueva Tarea</span>
+			        <form role="form" class="form">
+			            <div class="form-group float-label-control">
+			                <label for="">Tarea</label>
+			                <input type="text" class="form-control" placeholder="Tarea" ng-model="taskName">
+			            </div>
+			            <div class="form-group float-label-control">
+			                <label for="">Descripcion</label>
+			                <textarea class="form-control" placeholder="Descripcion" rows="1" ng-model="taskDescription"></textarea>
+			            </div>
+			            <div class="form-group float-label-control">
+			                <label for="">Tiempo Estimado</label>
+			                <input type="number" class="form-control" placeholder="Tiempo Estimado" onkeypress='return event.charCode >= 48 && event.charCode <= 57' ng-model="taskTime">
+			            </div>
+
+			            <div class="text-center ">
+			              <button class="btn btn-success btn-xs" ng-click="this.disabled=true" >Guardar</button>
+			            </div>
+			        </form>
+		        </div>
+	        </div>
+	    </div>
+    </form>
+</div>
+

@@ -1,0 +1,56 @@
+h2{
+    color: white;
+    border-bottom: 1px solid;
+    line-height: 2;
+    width: 80%;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+#message label {
+    width: 100%;
+}
+.username {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+
+    &:before { 
+        position: absolute;
+        font-family: 'Glyphicons Halflings';
+        content: "\e008"; 
+        color: rgba(black,0.2);
+        top: 10px;
+        left: 10px;
+    } 
+}
+
+.pword {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+
+    &:before { 
+        position: absolute;
+        font-family: 'FontAwesome';
+        content: "\f084"; 
+        color: rgba(black,0.2);
+        top: 10px;
+        left: 10px;
+    } 
+}
+
+
+.login-form{
+    margin: 0 10px;
+    .panel{
+        background: rgba(white, 0.9);
+        .panel-heading{
+            background: rgba(whitesmoke, 0.7);
+        }
+    }
+}

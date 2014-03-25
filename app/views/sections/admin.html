@@ -1,0 +1,23 @@
+<div class="" ng-controller="TasksCtrl">
+    <section id="services" ng-include="'/views/sections/menu-admin.html'"></section>
+
+    <div class="container">
+        <div class="row well">
+            <div class="col-md-12">
+                <div id="dashboard">
+                    <span class="title"><i class="fa fa-check-square-o"></i> Tareas </span>
+                    <div class="item" ng-repeat="task in tasks" ng-init="mytime = task.time">
+                        
+                        <div class="task-title"><i class="fa fa-tasks"></i> {{task.task}}</div>
+                        <p>{{task.description}}</p>
+
+                        <span class="time"><i class="fa fa-clock-o"></i> Tiempo estimado: {{task.time}}Hrs</span>
+                        <!-- <div class="text-center ">
+                          <button class="btn btn-primary btn-xs" ng-click="this.disabled=true" >Votar</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
